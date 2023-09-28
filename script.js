@@ -1,9 +1,9 @@
 //your JS code here. If required.
-window.addEventListener("resize", getscreensize);
-
-function getscreensize(){
-	let element = document.getElementById("sizeInfo");
-	let x = document.documentElement.clientWidth;
-	let y = document.documentElement.clientHeight;
-	element.innerHTML= `<h1>Width: ${x} and Height: ${y}</h1>`;
+function getsize()
+{
+var w = document.documentElement.clientWidth;
+var h = document.documentElement.clientHeight;
+        
+// put the result into a h1 tag
+ document.getElementById('sizeInfo').innerHTML = "<h1>Width: " + w + " and  Height: " + h + "</h1>";
 }
